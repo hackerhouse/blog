@@ -1,0 +1,19 @@
+body {
+    margin: 0px;
+}
+
+header {
+    margin: 0px;
+    background-color: #000;
+}
+
+#blog-title {
+    margin: 0px;
+    padding: 40px;
+    font-family: courier;
+    color: lime;
+}
+
+#content {
+    padding: 25px;
+}
