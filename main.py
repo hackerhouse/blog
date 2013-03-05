@@ -3,7 +3,9 @@
 
 import waltz
 
-urls = ('/analytics/?', 'routes.analytics.Analytics',
+urls = ('/analytics/?', 'waltz.modules.Analytics',
+        '/([0-9]+)', 'routes.blog.Post',
+        '/404/?', 'routed.index.NotFound',
         '/?', 'routes.index.Index')
 
 app = waltz.setup.dancefloor(urls, globals())
