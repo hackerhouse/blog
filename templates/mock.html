@@ -1,0 +1,48 @@
+$def with()
+
+<h2>Hack 1: Automatic Front-Door Opener</h2>
+<h3 class="synopsis">
+    Once you do something for the second time, it's time for that something to be automated. After rising from a reclined position to buzz in guests at our front gate for the thirtieth time, it was time to bring the gate closer to our fingers. We used an Electric Imp to provide a web interface to a simple relay circuit, which we hardwired to the button that opens our gate. We've document the project here so you can build your own.
+</h3>
+<img style="width: 400px;" src="/static/imgs/door-open-circuit.jpg" alt="gate circuit"/>
+<h3>Introduction</h3>
+<p>The project consists of three parts, which we'll describe separately. We'll then describe how to link them all together, and provide some suggestions and resources for extending the usefulness of this project. Here are the <a href="#parts">materials</a> you'll need.</p>
+<ol class="toc">
+    <li>
+    <h4><a href="#buzzer">Gate Buzzer</a></h4>
+    <p>In this section we describe how the gate buzzer works, what you'll need to test in order to implement this (somewhat) safely, and how the relay circuit will actually be wired into the system.</p>
+    </li>
+    <li>
+    <h4><a href="#relay">Relay Circuit</a></h4>
+    <p>This circuit does what your buzzer's button does: completes your building's buzzer circuit by allowing power to flow between two wires. However, this component uses a relay instead of a button. The relay is controlled by a transistor, which is switched by a separately-powered Electric Imp Breakout Board.</p>
+    </li>
+    <li>
+    <h4><a href="imp">Electric Imp (+software)</a></h4>
+    <p>The Electric Imp is an impressive device that combines a microcontroller and wifi shield. The cloud API is easy to program for projects such as this, and makes it simple to connect physical things to the internet. We'll show how to set up the Imp and write the software in this section.</p>
+    </li>
+    <li>
+    <h4><a href="tieUp">Tying It All Together</a></h4>
+    <p>Once you've got a handle on the parts that make up this small system, we'll explain how to link them together to make a working circuit that opens the door from the internet.</p>
+    </li>
+    <li>
+    <h4><a href="suggestions">Suggestions and Resources</a></h4>
+    <p>By this point you'll be able to open your front gate by hitting a webpage with your browser, but there are probably more convenient interfaces, such as a mobile app or command line alias. Also, this is your front door we're talking about, so we'll discuss some security vulnerabilities. Also, it might be nice to get this thing off the breadboard and onto something more solid. We'll talk about soldering this to a proto-board and, as a next step, planning a pcb design. Also, what about a housing for the device?</p>
+    </li>
+</ol>
+<h3><a name="buzzer">Gate Buzzer</a></h3>
+<p></p>
+<h3><a name="relay">Relay Circuit</a></h3>
+<h3><a name="Imp">Electric Imp (+software)</a></h3>
+<h3><a name="tieUp">Tying It All Together</a></h3>
+<h3><a name="suggestions">Suggestions and Resources</a></h3>
+<h3><a name="parts">Parts List</a></h3>
+<ul>
+    <li><a href="http://www.amazon.com/SparkFun-Basic-Breadboard/dp/B004G4VR0I/ref=sr_1_12?s=electronics&ie=UTF8&qid=1361187310&sr=1-12&keywords=solderless+breadboard">Breadboard</a></li>
+    <li><a href="http://en.wikipedia.org/wiki/TIP31">TIP31 Transistor TO-220 case * NPN silicon</a></li>
+    <li><a href="http://www.amazon.com/RESISTOR-METAL-FILM-FLAMEPROOF-AXIAL/dp/B007Z7MZN6/ref=sr_1_15?s=electronics&ie=UTF8&qid=1361187259&sr=1-15&keywords=100+ohm+resistor">100 Ohm resistor, 1/8 Watt</a></li>
+    <li><a href="http://www.amazon.com/Amico-HT4100F-General-Power-Relay/dp/B008MPK0VE/ref=pd_sbs_e_4">5V Relay</a></li>
+    <li><a href="https://www.sparkfun.com/products/11395">Electric Imp</a></li>
+    <li>
+    <a href="http://www.adafruit.com/products/1130">Electric Imp Breakout Board</a>
+    </li>
+</ul>

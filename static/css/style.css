@@ -1,5 +1,8 @@
+@import 'normalize.css';
+
 body {
     margin: 0px;
+    font-family: monospace;
 }
 
 header {

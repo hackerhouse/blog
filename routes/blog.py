@@ -1,6 +1,6 @@
-import markdown
-import web
 import os
+import markdown
+from waltz import web, render
 
 _path = os.getcwd()
 
@@ -9,5 +9,5 @@ class Post:
         path = '%s/blog/posts/%s' % (_path, post)
         if os.path.isfile(path):
             with open(path) as p:
-                return markdown.markdown(p.read())
+                return render().post(markdown.markdown(p.read()))
         raise web.notfound()
